@@ -34,9 +34,9 @@
 		"ControlName"	"Frame"
 		"fieldName"		"BottomBar"
 		"xpos"			"0"
-		"ypos"			"r20"	
+		"ypos"			"r70"		
 		"ypos_minmode"	"r20"
-		"tall"			"15"
+		"tall"			"70"
 		"tall_minmode"	"0"				
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -49,9 +49,9 @@
 		"ControlName"		"Panel"
 		"fieldName"		"bottombarblank"
 		"xpos"			"0"
-		"ypos"			"r70"	[$WIN32]	
+		"ypos"			"r70"	
 		"ypos_minmode"	"r0"
-		"tall"			"35"	[$WIN32]		// this needs to match the size of BottomBar
+		"tall"			"70"		// this needs to match the size of BottomBar
 		"tall_minmode"	"0"			
 		"wide"			"f0"
 		"autoResize"	"0"
@@ -63,16 +63,19 @@
 	}
 	"ReinforcementsLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"		"CTFLabel"
 		"fieldName"		"ReinforcementsLabel"
-		"xpos"			"c-300"
+		"xpos"			"c-310"	[$WIN32]
 		"xpos_minmode"	"c-300"
-		"ypos"			"50"
-		"ypos_minmode"	"3"
+		"xpos"			"c-200"	[$X360]
+		"ypos"			"5"	[$WIN32]
+		"ypos_minmode"	"3"		[$WIN32]
+		"ypos"			"67"	[$X360]
 		"ypos_hidef"	"79"
 		"ypos_lodef"	"85"
-		"wide"			"600"
+		"wide"			"600"	[$WIN32]
 		"wide_minmode"	"300"
+		"wide"			"400"	[$X360]
 		"tall"			"18"
 		"tall_hidef"		"23"
 		"autoResize"		"0"
@@ -81,7 +84,7 @@
 		"enabled"		"1"
 		"labelText"		"#game_respawntime_in_secs"
 		"textAlignment"		"center"
-		"font"			"HudFontMediumSmallSecondary"
+		"font"			"HudFontMediumBold"
 	}
 	"BuyBackLabel"
 	{
@@ -103,12 +106,12 @@
 	}
 	"MapLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"		"CTFLabel"
 		"fieldName"		"MapLabel"
-		"font"			"HudFontSmall"
-		"font_hidef"		"HudFontMedium"
+		"font"			"HudFontSmallBold"
+		"font_hidef"		"HudFontMediumBold"
 		"xpos"			"r260"	[$WIN32]
-		"ypos"			"16"	[$WIN32]
+		"ypos"			"2"	[$WIN32]
 		"xpos"			"r285"	[$X360]
 		"ypos"			"32"	[$X360]
 		"wide"			"240"	[$WIN32]
@@ -233,7 +236,7 @@
 	}
 	"TipLabel"
 	{
-		"ControlName"		"CExLabel"
+		"ControlName"	"CExLabel"
 		"fieldName"		"TipLabel"
 		"xpos"			"15"
 		"xpos_hidef"	"60"
